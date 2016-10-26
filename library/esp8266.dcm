@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP esp8266-12f
+D ESP-12F WiFi module.
+K esp ESP 8266 12f
+F doc/AI-Thinker_ESP-12F.pdf
+$ENDCMP
+#
+#End Doc Library

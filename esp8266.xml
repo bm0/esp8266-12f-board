@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/bm0/esp8266/esp8266.sch</source>
+    <date>Чт 27 окт 2016 00:48:16</date>
+    <tool>Eeschema 4.0.4+e1-6308~48~ubuntu16.04.1-stable</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>esp8266.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="P1">
+      <value>VIN</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x02</footprint>
+      <libsource lib="conn" part="CONN_01X02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58112D2B</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>APE8865N-33-HF-3</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <libsource lib="regul" part="APE8865N-33-HF-3"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58112D86</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>10K</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5811429F</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>100μ</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58114BC5</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>10K</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>581158EB</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>10K</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58117E2E</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_PUSH</value>
+      <footprint>Buttons_Switches_SMD:SW_SPST_B3SL-1002P</footprint>
+      <libsource lib="device" part="SW_PUSH"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>581186E4</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>10K</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58118E95</tstamp>
+    </comp>
+    <comp ref="SW2">
+      <value>SW_PUSH</value>
+      <footprint>Buttons_Switches_SMD:SW_SPST_B3SL-1002P</footprint>
+      <libsource lib="device" part="SW_PUSH"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58118E9E</tstamp>
+    </comp>
+    <comp ref="P3">
+      <value>CONN_01X08</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x08</footprint>
+      <libsource lib="conn" part="CONN_01X08"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5811AC52</tstamp>
+    </comp>
+    <comp ref="P2">
+      <value>CONN_01X08</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x08</footprint>
+      <libsource lib="conn" part="CONN_01X08"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5811B8FF</tstamp>
+    </comp>
+    <comp ref="P4">
+      <value>CONN_01X06</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x06</footprint>
+      <libsource lib="conn" part="CONN_01X06"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5811C922</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>10μf</value>
+      <footprint>Capacitors_SMD:c_elec_4x5.8</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5811CEF2</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>10μf</value>
+      <footprint>Capacitors_SMD:c_elec_4x5.8</footprint>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5811CF67</tstamp>
+    </comp>
+    <comp ref="esp8266-12-f1">
+      <value>esp8266-12f</value>
+      <footprint>esp8266:esp8266-12f</footprint>
+      <libsource lib="esp8266" part="esp8266-12f"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58124A22</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="regul" part="APE8865N-12-HF-3">
+      <aliases>
+        <alias>APE8865N-15-HF-3</alias>
+        <alias>APE8865N-16-HF-3</alias>
+        <alias>APE8865N-17-HF-3</alias>
+        <alias>APE8865N-18-HF-3</alias>
+        <alias>APE8865N-19-HF-3</alias>
+        <alias>APE8865N-20-HF-3</alias>
+        <alias>APE8865N-21-HF-3</alias>
+        <alias>APE8865N-22-HF-3</alias>
+        <alias>APE8865N-23-HF-3</alias>
+        <alias>APE8865N-24-HF-3</alias>
+        <alias>APE8865N-25-HF-3</alias>
+        <alias>APE8865N-26-HF-3</alias>
+        <alias>APE8865N-27-HF-3</alias>
+        <alias>APE8865N-28-HF-3</alias>
+        <alias>APE8865N-29-HF-3</alias>
+        <alias>APE8865N-30-HF-3</alias>
+        <alias>APE8865N-31-HF-3</alias>
+        <alias>APE8865N-32-HF-3</alias>
+        <alias>APE8865N-33-HF-3</alias>
+      </aliases>
+      <description>300 mA Low Dropout Voltage Regulator, Fixed Output 1.2V, SOT-23</description>
+      <docs>http://www.a-powerusa.com/docs/APE8865-3.pdf</docs>
+      <footprints>
+        <fp>SOT*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">APE8865N-12-HF-3</field>
+        <field name="Footprint">SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VOUT" type="power_out"/>
+        <pin num="3" name="VIN" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C?</fp>
+        <fp>C_????_*</fp>
+        <fp>C_????</fp>
+        <fp>SMD*_c</fp>
+        <fp>Capacitor*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X02">
+      <description>Connector 01x02</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X02</fp>
+        <fp>Pin_Header_Angled_1X02</fp>
+        <fp>Socket_Strip_Straight_1X02</fp>
+        <fp>Socket_Strip_Angled_1X02</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X06">
+      <description>Connector 01x06</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X06</fp>
+        <fp>Pin_Header_Angled_1X06</fp>
+        <fp>Socket_Strip_Straight_1X06</fp>
+        <fp>Socket_Strip_Angled_1X06</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X06</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+        <pin num="6" name="P6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X08">
+      <description>Connector 01x08</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X08</fp>
+        <fp>Pin_Header_Angled_1X08</fp>
+        <fp>Socket_Strip_Straight_1X08</fp>
+        <fp>Socket_Strip_Angled_1X08</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X08</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+        <pin num="6" name="P6" type="passive"/>
+        <pin num="7" name="P7" type="passive"/>
+        <pin num="8" name="P8" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="CP">
+      <description>Polarised capacitor</description>
+      <footprints>
+        <fp>CP*</fp>
+        <fp>Elko*</fp>
+        <fp>TantalC*</fp>
+        <fp>C*elec</fp>
+        <fp>c_elec*</fp>
+        <fp>SMD*_Pol</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>Resistor_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="SW_PUSH">
+      <description>Button</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_PUSH</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="esp8266" part="esp8266-12f">
+      <description>ESP-12F WiFi module.</description>
+      <docs>AI-Thinker_ESP-12F.pdf</docs>
+      <footprints>
+        <fp>esp*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">esp8266-12-f</field>
+        <field name="Value">esp8266-12f</field>
+      </fields>
+      <pins>
+        <pin num="1" name="RST" type="input"/>
+        <pin num="2" name="ADC" type="BiDi"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="GPIO16" type="input"/>
+        <pin num="5" name="GPIO14" type="input"/>
+        <pin num="6" name="GPIO12" type="input"/>
+        <pin num="7" name="GPIO13" type="input"/>
+        <pin num="8" name="VCC" type="input"/>
+        <pin num="9" name="CS0" type="BiDi"/>
+        <pin num="10" name="MISO" type="BiDi"/>
+        <pin num="11" name="GPIO9" type="BiDi"/>
+        <pin num="12" name="GPIO10" type="BiDi"/>
+        <pin num="13" name="MOSI" type="BiDi"/>
+        <pin num="14" name="SCLK" type="BiDi"/>
+        <pin num="15" name="GND" type="BiDi"/>
+        <pin num="16" name="GPIO15" type="BiDi"/>
+        <pin num="17" name="GPIO2" type="BiDi"/>
+        <pin num="18" name="GPIO0" type="BiDi"/>
+        <pin num="19" name="GPIO4" type="BiDi"/>
+        <pin num="20" name="GPIO5" type="BiDi"/>
+        <pin num="21" name="RXD" type="BiDi"/>
+        <pin num="22" name="TXD" type="BiDi"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="regul">
+      <uri>/usr/share/kicad/library/regul.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>/usr/share/kicad/library/conn.lib</uri>
+    </library>
+    <library logical="esp8266">
+      <uri>/home/bm0/esp8266/library/esp8266.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/SCLK">
+      <node ref="P4" pin="6"/>
+      <node ref="esp8266-12-f1" pin="14"/>
+    </net>
+    <net code="2" name="/CS0">
+      <node ref="esp8266-12-f1" pin="9"/>
+      <node ref="P4" pin="1"/>
+    </net>
+    <net code="3" name="/MISO">
+      <node ref="P4" pin="2"/>
+      <node ref="esp8266-12-f1" pin="10"/>
+    </net>
+    <net code="4" name="/GPIO9">
+      <node ref="esp8266-12-f1" pin="11"/>
+      <node ref="P4" pin="3"/>
+    </net>
+    <net code="5" name="/GPIO10">
+      <node ref="P4" pin="4"/>
+      <node ref="esp8266-12-f1" pin="12"/>
+    </net>
+    <net code="6" name="/MOSI">
+      <node ref="P4" pin="5"/>
+      <node ref="esp8266-12-f1" pin="13"/>
+    </net>
+    <net code="7" name="/GPIO15">
+      <node ref="esp8266-12-f1" pin="16"/>
+      <node ref="R4" pin="1"/>
+      <node ref="P3" pin="7"/>
+    </net>
+    <net code="8" name="GND">
+      <node ref="R4" pin="2"/>
+      <node ref="SW2" pin="1"/>
+      <node ref="U1" pin="1"/>
+      <node ref="P1" pin="2"/>
+      <node ref="SW1" pin="1"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="esp8266-12-f1" pin="15"/>
+      <node ref="C1" pin="2"/>
+      <node ref="P3" pin="8"/>
+    </net>
+    <net code="9" name="/RST">
+      <node ref="SW1" pin="2"/>
+      <node ref="R1" pin="2"/>
+      <node ref="P2" pin="1"/>
+      <node ref="esp8266-12-f1" pin="1"/>
+    </net>
+    <net code="10" name="/ADC">
+      <node ref="P2" pin="2"/>
+      <node ref="esp8266-12-f1" pin="2"/>
+    </net>
+    <net code="11" name="/EN">
+      <node ref="P2" pin="3"/>
+      <node ref="esp8266-12-f1" pin="3"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="12" name="/GPIO16">
+      <node ref="esp8266-12-f1" pin="4"/>
+      <node ref="P2" pin="4"/>
+    </net>
+    <net code="13" name="/GPIO14">
+      <node ref="esp8266-12-f1" pin="5"/>
+      <node ref="P2" pin="5"/>
+    </net>
+    <net code="14" name="/GPIO12">
+      <node ref="esp8266-12-f1" pin="6"/>
+      <node ref="P2" pin="6"/>
+    </net>
+    <net code="15" name="/GPIO13">
+      <node ref="P2" pin="7"/>
+      <node ref="esp8266-12-f1" pin="7"/>
+    </net>
+    <net code="16" name="VCC">
+      <node ref="R2" pin="1"/>
+      <node ref="R1" pin="1"/>
+      <node ref="esp8266-12-f1" pin="8"/>
+      <node ref="R3" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="P2" pin="8"/>
+      <node ref="U1" pin="2"/>
+      <node ref="C2" pin="1"/>
+    </net>
+    <net code="17" name="/GPIO2">
+      <node ref="P3" pin="6"/>
+      <node ref="esp8266-12-f1" pin="17"/>
+    </net>
+    <net code="18" name="Net-(C1-Pad1)">
+      <node ref="U1" pin="3"/>
+      <node ref="C1" pin="1"/>
+      <node ref="P1" pin="1"/>
+    </net>
+    <net code="19" name="/TXD">
+      <node ref="esp8266-12-f1" pin="22"/>
+      <node ref="P3" pin="1"/>
+    </net>
+    <net code="20" name="/RXD">
+      <node ref="esp8266-12-f1" pin="21"/>
+      <node ref="P3" pin="2"/>
+    </net>
+    <net code="21" name="/GPIO0">
+      <node ref="SW2" pin="2"/>
+      <node ref="esp8266-12-f1" pin="18"/>
+      <node ref="P3" pin="3"/>
+      <node ref="R2" pin="2"/>
+    </net>
+    <net code="22" name="/GPIO5">
+      <node ref="P3" pin="4"/>
+      <node ref="esp8266-12-f1" pin="20"/>
+    </net>
+    <net code="23" name="/GPIO4">
+      <node ref="esp8266-12-f1" pin="19"/>
+      <node ref="P3" pin="5"/>
+    </net>
+  </nets>
+</export>

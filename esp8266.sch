@@ -1,0 +1,445 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:esp8266
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "ESP8266 adapter board"
+Date "2016-10-27"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 "bm0"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR01
+U 1 1 581126EB
+P 8350 4550
+F 0 "#PWR01" H 8350 4300 50  0001 C CNN
+F 1 "GND" H 8350 4400 50  0000 C CNN
+F 2 "" H 8350 4550 50  0000 C CNN
+F 3 "" H 8350 4550 50  0000 C CNN
+	1    8350 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P1
+U 1 1 58112D2B
+P 2650 2000
+F 0 "P1" H 2650 2150 50  0000 C CNN
+F 1 "VIN" H 2650 1850 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02" H 2650 2000 50  0001 C CNN
+F 3 "" H 2650 2000 50  0000 C CNN
+	1    2650 2000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L APE8865N-33-HF-3 U1
+U 1 1 58112D86
+P 3800 1850
+F 0 "U1" H 3800 2100 50  0000 C CNN
+F 1 "APE8865N-33-HF-3" H 3800 2050 50  0001 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 3550 2150 50  0001 C CIN
+F 3 "" H 3800 1850 50  0000 C CNN
+	1    3800 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 581131BF
+P 4450 2250
+F 0 "#PWR02" H 4450 2000 50  0001 C CNN
+F 1 "GND" H 4450 2100 50  0000 C CNN
+F 2 "" H 4450 2250 50  0000 C CNN
+F 3 "" H 4450 2250 50  0000 C CNN
+	1    4450 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR03
+U 1 1 58113430
+P 4450 1800
+F 0 "#PWR03" H 4450 1650 50  0001 C CNN
+F 1 "VCC" H 4450 1950 50  0000 C CNN
+F 2 "" H 4450 1800 50  0000 C CNN
+F 3 "" H 4450 1800 50  0000 C CNN
+	1    4450 1800
+	1    0    0    -1  
+$EndComp
+Text Label 8150 3500 0    60   ~ 0
+TXD
+Text Label 8150 3600 0    60   ~ 0
+RXD
+Text Label 6550 3600 2    60   ~ 0
+ADC
+Text Label 6550 3500 2    60   ~ 0
+RST
+Wire Wire Line
+	8150 4200 8350 4200
+Wire Wire Line
+	8350 4200 8350 4550
+Wire Wire Line
+	4250 1800 4450 1800
+Wire Wire Line
+	2850 1800 3350 1800
+Wire Wire Line
+	2850 1800 2850 1950
+Connection ~ 3150 1800
+Wire Wire Line
+	2850 2050 2850 2150
+Wire Wire Line
+	5900 3700 6550 3700
+$Comp
+L R R3
+U 1 1 5811429F
+P 6200 3450
+F 0 "R3" V 6280 3450 50  0000 C CNN
+F 1 "10K" V 6200 3450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6130 3450 50  0001 C CNN
+F 3 "" H 6200 3450 50  0000 C CNN
+	1    6200 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 3700 6200 3600
+Connection ~ 6200 3700
+Wire Wire Line
+	6200 3300 6200 3200
+Text Label 6200 3200 1    60   ~ 0
+VCC
+Text Label 5900 3700 0    60   ~ 0
+EN
+Wire Wire Line
+	5900 4200 6550 4200
+Text Label 5900 4200 0    60   ~ 0
+VCC
+$Comp
+L C C3
+U 1 1 58114BC5
+P 6200 4400
+F 0 "C3" H 6225 4500 50  0000 L CNN
+F 1 "100μ" H 6225 4300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 6238 4250 50  0001 C CNN
+F 3 "" H 6200 4400 50  0000 C CNN
+	1    6200 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 4100 9050 4100
+$Comp
+L R R4
+U 1 1 581158EB
+P 8700 4300
+F 0 "R4" V 8780 4300 50  0000 C CNN
+F 1 "10K" V 8700 4300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 8630 4300 50  0001 C CNN
+F 3 "" H 8700 4300 50  0000 C CNN
+	1    8700 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 4150 8700 4100
+Connection ~ 8700 4100
+Wire Wire Line
+	8700 4450 8700 4550
+$Comp
+L GND #PWR04
+U 1 1 581159B2
+P 8700 4550
+F 0 "#PWR04" H 8700 4300 50  0001 C CNN
+F 1 "GND" H 8700 4400 50  0000 C CNN
+F 2 "" H 8700 4550 50  0000 C CNN
+F 3 "" H 8700 4550 50  0000 C CNN
+	1    8700 4550
+	1    0    0    -1  
+$EndComp
+Text Label 9050 4100 2    60   ~ 0
+GPIO15
+Text Label 6550 3800 2    60   ~ 0
+GPIO16
+Text Label 6550 3900 2    60   ~ 0
+GPIO14
+Text Label 6550 4000 2    60   ~ 0
+GPIO12
+Text Label 6550 4100 2    60   ~ 0
+GPIO13
+Text Label 8150 3700 0    60   ~ 0
+GPIO5
+Text Label 8150 3800 0    60   ~ 0
+GPIO4
+Text Label 8150 3900 0    60   ~ 0
+GPIO0
+Text Label 8150 4000 0    60   ~ 0
+GPIO2
+Text Label 7100 4550 3    60   ~ 0
+CS0
+Text Label 7200 4550 3    60   ~ 0
+MISO
+Text Label 7300 4550 3    60   ~ 0
+GPIO9
+Text Label 7400 4550 3    60   ~ 0
+GPIO10
+Text Label 7500 4550 3    60   ~ 0
+MOSI
+Text Label 7600 4550 3    60   ~ 0
+SCLK
+Wire Wire Line
+	3450 3100 4100 3100
+Wire Wire Line
+	3750 3100 3750 2950
+Connection ~ 3750 3100
+$Comp
+L R R1
+U 1 1 58117E2E
+P 3750 2800
+F 0 "R1" V 3650 2800 50  0000 C CNN
+F 1 "10K" V 3750 2800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3680 2800 50  0001 C CNN
+F 3 "" H 3750 2800 50  0000 C CNN
+	1    3750 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 2650 3750 2550
+Text Label 3750 2550 1    60   ~ 0
+VCC
+Text Label 4100 3100 2    60   ~ 0
+RST
+$Comp
+L SW_PUSH SW1
+U 1 1 581186E4
+P 3150 3100
+F 0 "SW1" H 3300 3210 50  0000 C CNN
+F 1 "SW_PUSH" H 3150 3020 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_B3SL-1002P" H 3150 3100 50  0001 C CNN
+F 3 "" H 3150 3100 50  0000 C CNN
+	1    3150 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 4100 4100 4100
+Wire Wire Line
+	3750 4100 3750 3950
+Connection ~ 3750 4100
+$Comp
+L R R2
+U 1 1 58118E95
+P 3750 3800
+F 0 "R2" V 3650 3800 50  0000 C CNN
+F 1 "10K" V 3750 3800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 3680 3800 50  0001 C CNN
+F 3 "" H 3750 3800 50  0000 C CNN
+	1    3750 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 3650 3750 3550
+Text Label 3750 3550 1    60   ~ 0
+VCC
+Text Label 4100 4100 2    60   ~ 0
+GPIO0
+$Comp
+L SW_PUSH SW2
+U 1 1 58118E9E
+P 3150 4100
+F 0 "SW2" H 3300 4210 50  0000 C CNN
+F 1 "SW_PUSH" H 3150 4020 50  0001 C CNN
+F 2 "Buttons_Switches_SMD:SW_SPST_B3SL-1002P" H 3150 4100 50  0001 C CNN
+F 3 "" H 3150 4100 50  0000 C CNN
+	1    3150 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X08 P3
+U 1 1 5811AC52
+P 4100 5200
+F 0 "P3" H 4100 5650 50  0000 C CNN
+F 1 "CONN_01X08" V 4200 5200 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x08" H 4100 5200 50  0001 C CNN
+F 3 "" H 4100 5200 50  0000 C CNN
+	1    4100 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X08 P2
+U 1 1 5811B8FF
+P 3000 5200
+F 0 "P2" H 3000 5650 50  0000 C CNN
+F 1 "CONN_01X08" V 3100 5200 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x08" H 3000 5200 50  0001 C CNN
+F 3 "" H 3000 5200 50  0000 C CNN
+	1    3000 5200
+	-1   0    0    -1  
+$EndComp
+Text Label 3200 4850 0    60   ~ 0
+RST
+Text Label 3200 4950 0    60   ~ 0
+ADC
+Text Label 3200 5050 0    60   ~ 0
+EN
+Text Label 3200 5150 0    60   ~ 0
+GPIO16
+Text Label 3200 5250 0    60   ~ 0
+GPIO14
+Text Label 3200 5350 0    60   ~ 0
+GPIO12
+Text Label 3200 5450 0    60   ~ 0
+GPIO13
+Text Label 3200 5550 0    60   ~ 0
+VCC
+Text Label 3900 4850 2    60   ~ 0
+TXD
+Text Label 3900 4950 2    60   ~ 0
+RXD
+Text Label 3900 5050 2    60   ~ 0
+GPIO0
+Text Label 3900 5150 2    60   ~ 0
+GPIO5
+Text Label 3900 5250 2    60   ~ 0
+GPIO4
+Text Label 3900 5350 2    60   ~ 0
+GPIO2
+Text Label 3900 5450 2    60   ~ 0
+GPIO15
+Text Label 3900 5550 2    60   ~ 0
+GND
+$Comp
+L CONN_01X06 P4
+U 1 1 5811C922
+P 3550 6200
+F 0 "P4" H 3550 6550 50  0000 C CNN
+F 1 "CONN_01X06" V 3650 6200 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x06" H 3550 6200 50  0001 C CNN
+F 3 "" H 3550 6200 50  0000 C CNN
+	1    3550 6200
+	0    -1   1    0   
+$EndComp
+Text Label 3300 6000 1    60   ~ 0
+CS0
+Text Label 3400 6000 1    60   ~ 0
+MISO
+Text Label 3500 6000 1    60   ~ 0
+GPIO9
+Text Label 3600 6000 1    60   ~ 0
+GPIO10
+Text Label 3700 6000 1    60   ~ 0
+MOSI
+Text Label 3800 6000 1    60   ~ 0
+SCLK
+$Comp
+L CP C1
+U 1 1 5811CEF2
+P 3150 1950
+F 0 "C1" H 3175 2050 50  0000 L CNN
+F 1 "10μf" H 3175 1850 50  0000 L CNN
+F 2 "Capacitors_SMD:c_elec_4x5.8" H 3188 1800 50  0001 C CNN
+F 3 "" H 3150 1950 50  0000 C CNN
+	1    3150 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C2
+U 1 1 5811CF67
+P 4450 1950
+F 0 "C2" H 4475 2050 50  0000 L CNN
+F 1 "10μf" H 4475 1850 50  0000 L CNN
+F 2 "Capacitors_SMD:c_elec_4x5.8" H 4488 1800 50  0001 C CNN
+F 3 "" H 4450 1950 50  0000 C CNN
+	1    4450 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 2100 3150 2150
+Connection ~ 3150 2150
+Connection ~ 3800 2150
+$Comp
+L esp8266-12f esp8266-12-f1
+U 1 1 58124A22
+P 7350 3800
+F 0 "esp8266-12-f1" H 7350 4200 60  0000 C CNN
+F 1 "esp8266-12f" H 7350 4100 60  0000 C CNN
+F 2 "esp8266:esp8266-12f" H 7350 4100 60  0001 C CNN
+F 3 "" H 7350 4100 60  0001 C CNN
+	1    7350 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 58126656
+P 2850 3100
+F 0 "#PWR05" H 2850 2850 50  0001 C CNN
+F 1 "GND" H 2850 2950 50  0000 C CNN
+F 2 "" H 2850 3100 50  0000 C CNN
+F 3 "" H 2850 3100 50  0000 C CNN
+	1    2850 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 58126FB0
+P 2850 4150
+F 0 "#PWR06" H 2850 3900 50  0001 C CNN
+F 1 "GND" H 2850 4000 50  0000 C CNN
+F 2 "" H 2850 4150 50  0000 C CNN
+F 3 "" H 2850 4150 50  0000 C CNN
+	1    2850 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 2100 4450 2250
+Wire Wire Line
+	2850 4150 2850 4100
+Wire Wire Line
+	6200 4250 6200 4200
+Connection ~ 6200 4200
+Connection ~ 4450 2150
+$Comp
+L GND #PWR07
+U 1 1 58128EDD
+P 6200 4550
+F 0 "#PWR07" H 6200 4300 50  0001 C CNN
+F 1 "GND" H 6200 4400 50  0000 C CNN
+F 2 "" H 6200 4550 50  0000 C CNN
+F 3 "" H 6200 4550 50  0000 C CNN
+	1    6200 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 4550 6200 4550
+Connection ~ 2850 1850
+Connection ~ 2850 2150
+Wire Wire Line
+	2850 2150 4450 2150
+$EndSCHEMATC
