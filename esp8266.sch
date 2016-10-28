@@ -29,6 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:esp8266
+LIBS:esp8266-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -324,11 +325,11 @@ TXD
 Text Label 3900 4950 2    60   ~ 0
 RXD
 Text Label 3900 5050 2    60   ~ 0
-GPIO0
-Text Label 3900 5150 2    60   ~ 0
 GPIO5
-Text Label 3900 5250 2    60   ~ 0
+Text Label 3900 5150 2    60   ~ 0
 GPIO4
+Text Label 3900 5250 2    60   ~ 0
+GPIO0
 Text Label 3900 5350 2    60   ~ 0
 GPIO2
 Text Label 3900 5450 2    60   ~ 0
